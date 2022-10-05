@@ -1,0 +1,8 @@
+# SP_Face_Detection
+執行方式：
+1. 執行skin_filter_data_collect.m，收集training data
+2. 執行skin_filter_normalize.m，對收集到的training data做normalization
+3. 執行skin_filter_train.m，利用svm訓練模型
+4. 執行skin_filter_test.m，測試訓練出的模型並同時增加training data以增加新一輪訓練的精準度，並對得到skin filter結果做後處理
+5. 執行skin_filter_binary_seg.m，對偵測結果做二值化分割
+6. 執行ellipse_matching.m，
